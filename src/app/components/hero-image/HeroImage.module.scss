@@ -1,0 +1,42 @@
+.heroImage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  gap: 10px;
+
+  &.right {
+    .imageContainer {
+      order: 2;
+    }
+  }
+
+  &.one-two {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &.two-one {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .imageContainer {
+    position: relative;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: aqua;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    &.one-two,
+    &.two-one {
+      grid-template-columns: 1fr;
+    }
+  }
+}
