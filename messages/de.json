@@ -2,5 +2,8 @@
   "HomePage": {
     "title": "Willkommen auf unserer Website",
     "description": "Hier finden Sie die neuesten Nachrichten und Informationen."
+  },
+  "Button": {
+    "click_here": "Hier klicken"
   }
 }

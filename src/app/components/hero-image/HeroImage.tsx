@@ -19,7 +19,7 @@ export const HeroImage: FC<Props> = ({
   description,
   layout,
   align,
-  lazy
+  lazy,
 }) => {
   let mainClassName = styles.heroImage;
   if (layout) {
@@ -32,7 +32,12 @@ export const HeroImage: FC<Props> = ({
   return (
     <div className={mainClassName}>
       <div className={styles.imageContainer}>
-        <Image fill={true} src={image} alt="Hero" priority={!lazy} />
+        <Image
+          src={image}
+          fill
+          alt="Hero"
+          priority={!lazy}
+        />
       </div>
       <div className={styles.textContainer}>
         <h1>{title}</h1>

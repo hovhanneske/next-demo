@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import styles from "./page.module.css";
 import { HeroImage } from "@/app/components/hero-image/HeroImage";
+import { TestItem } from "../components/test-item/TestItem";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -14,6 +15,8 @@ export default function Home() {
           layout="two-one"
           align="right"
         />
+
+        <TestItem />
       </main>
     </div>
   );
